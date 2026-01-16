@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<title>Check Day</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+ 
+     <a href="#BRING AND TAKE" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Personality Development</a> 
+<a href="#BRING AND TAKE" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">BRING AND TAKE</a>
+ 
+  <a href="#BUT" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">BUT</a>
+
+    <a href="#CHANGE OF TENSE" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CHANGE OF TENSE</a>
+	   <a href="#CLOSE AND SHUT" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CLOSE AND SHUT</a>
+	      <a href="#CLOTH AND CLOTHES" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CLOTH AND CLOTHES</a>
+		     <a href="#COLLECTIVE NOUNS" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COLLECTIVE NOUNS</a>
+			    <a href="#COME AND GO" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COME AND GO</a>
+				   <a href="#COMMON PREPOSITION + NOUN COMBINATIONS" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COMMON PREPOSITION + NOUN COMBINATIONS</a>
+				      <a href="#COMPARATIVES AND SUPERLATIVES" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COMPARATIVES AND SUPERLATIVES</a>
+					   <a href="#COMPARATIVES : A COMMON ERROR" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">COMPARATIVES : A COMMON ERROR</a>
+					    <a href="#CONJUNCTIONS" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CONJUNCTIONS</a>
+						 <a href="#CORRELATIVES" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">CORRELATIVES</a>
+						  <a href="#DEAD AND DIED" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DEAD AND DIED</a>
+						   <a href="#DETERMINES" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DETERMINES</a>
+						    <a href="#DO AND MAKE" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DO AND MAKE</a>
+		<a href="#DOUBLE NEGATIVES" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DOUBLE NEGATIVES</a>
+		<a href="#DURING AND FOR" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">DURING AND FOR</a>
+		<a href="#EACH AND EVERY" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">EACH AND EVERY</a>
+		<a href="#EACH OTHER AND ONE OTHER" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">EACH OTHER AND ONE OTHER</a>
+		<a href="#EAST, EASTERN, NORTH, NORTHERN ETC." onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">EAST, EASTERN, NORTH, NORTHERN ETC.</a>
+<a href="#ELDER AND ELDEST" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ELDER AND ELDEST</a>
+<a href="#END AND FINISH" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">END AND FINISH</a>
+<a href="#ENOUGH" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ENOUGH</a>
+<a href="#ESPECIALLY AND SPECIALY" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">ESPECIALLY AND SPECIALY</a>		
+<a href="#EXCEPT AND EXCEPT FOR" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">EXCEPT AND EXCEPT FOR</a>		
+<a href="#EXCEPT AND HOPE" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">EXCEPT AND HOPE</a>
+<a href="#EXPRESSIONS WITHOUT PREPOSITIONS" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">EXPRESSIONS WITHOUT PREPOSITIONS</a>
+<a href="#FAR AND A LONG WAY" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAR AND A LONG WAY</a>
+<a href="#GERUND" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">GERUND</a>
+<a href="#HISTORIC PRESENT" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">HISTORIC PRESENT</a>
+									
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Check Day</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>PERSONALITY DEVELOPMENT</b></h1>
+        <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <div class="w3-container" id="Personality Development" style="margin-top:75px">
+<!-- - GRAMMAR AND VOCABULARY 4 -->
+  <div class="w3-container" id="BRING AND TAKE" style="margin-top:75px">
+<!-- - BRING AND TAKE -->
+      <h1 class="w3-xxxlarge w3-text-red"><b>- BRING AND TAKE</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>*Incorrect: I don’t know what to bring when I leave for the conference.</p>
+    <p>*Correct: I don’t know what to take when I leave for the conference.</p>
+    <p>*Incorrect: I shall bring my wife with me when I go.</p>
+    <p>*Correct: I shall take my wife with me when I go.</p>
+    <p>*Incorrect: Take that book to me at my desk.</p>
+    <p>*Correct: Bring that book to me at my desk.</p>
+    </br><p>Use bring when something is being moved towards the speaker.</p>
+
+    </br><p>*Bring me that book.</p>
+
+    </br><p>Use take when something is being moved away from the area of the speaker.</p>
+
+    <p>*Take that file with you. (Here the file is being moved away from the area of the speaker.</p>
+</div>
+<!-- - BUT -->
+  <div class="w3-container" id="BUT" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- BUT</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>*Incorrect: He is the fastest runner and he came last.</p>
+    <p>*Correct: He is the fastest runner but he came last.</p>
+
+    </br><p>But is the conjunction to use when the second main clause gives unexpected or contradictory information.</p>
+
+<!-- - CHANGE OF TENSE -->
+<div class="w3-container" id="CHANGE OF TENSE" style="margin-top:75px">
+        <h1 class="w3-xxxlarge w3-text-red"><b>- CHANGE OF TENSE</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+
+      <p>The first verb in a sentence establishes the tense of any verb that comes later. If you begin writing in the past, don’t change to    the present. Similarly, if you begin writing in the present, don’t change to the past.</p>
+
+      <p>*Incorrect: In the story, the king loses his kingdom, but he regained everything in the end.</p>
+      <p>*Correct: In the story, the king loses his kingdom, but he regains everything in the end.</p>
+      <p>*Incorrect: The team won yesterday, but goes and loses this afternoon.</p>
+      <p>*Correct: The team won yesterday, but went and lost this afternoon.</p>
+</div>
+<!-- - CLOSE AND SHUT -->
+<div class="w3-container" id="CLOSE AND SHUT" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- CLOSE AND SHUT</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>There is little difference of meaning between close and shut.</p>
+
+    </br><p>*Shut/close your eyes.</p>
+    <p>*Can you close/shut the door?</p>
+    <p>*They close/shut the shops at 8 o’clock.</p>
+
+    </br><p>Cases where close is preferred</p>
+
+    </br><p>We close (and not shut) roads, letters, bank accounts, meetings etc.</p>
+
+    </br><p>*You should close your existing account before opening a new account. (NOT You should shut your existing account …)</p>
+</div>
+<!-- - CLOTH AND CLOTHES -->
+<div class="w3-container" id="CLOTH AND CLOTHES" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- CLOTH AND CLOTHES</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    </p>Cloth is the material used for making clothes. Clothes are things you wear.</p>
+
+    </br><p>*His clothes are made of expensive cloth.</p>
+</div>
+<!-- - COLLECTIVE NOUNS -->
+<div class="w3-container" id="COLLECTIVE NOUNS" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- COLLECTIVE NOUNS</b></h1>
+
+    <p>Group words or collective nouns take a singular verb if you are talking of the</p>
+    <p>group as a whole. They take a plural verb if you are talking about the individual members of the group.</p>
+    <p>Compare:</p>
+
+    </br><p>*The jury is in the courtroom. (Here we are talking about the whole group.)</p>
+    <p>*The jury are still debating the case. (Here we are talking about the individual members of the group.)</p>
+
+    </br><p>Note: Collective nouns are always singular in American English.</p>
+</div>
+<!-- - COME AND GO -->
+<div class="w3-container" id="COME AND GO" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- COME AND GO</b></h1><p>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>Come is used for movements to the place where the speaker or hearer is.</p>
+
+    </br><p>*Come to me. (Movement towards the speaker)</p>
+    <p>*’Alice, can you come here?’ ‘Yes, I am coming.’ (NOT I am going.)</p>
+    <p>*Can I come and sit beside you? (Movement towards the hearer)</p>
+
+    </br><p>Go is used for movements to other places.</p>
+
+    </br><p>*Let’s go and see them. (NOT Let’s come and see them.)
+    <p>*I want to go and live in the hills. (NOT I want to come and live in the hills.)</p>
+</div>
+<!-- - COMMON PREPOSITION + NOUN COMBINATIONS -->
+<div class="w3-container" id="COMMON PREPOSITION + NOUN COMBINATIONS" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- COMMON PREPOSITION + NOUN COMBINATIONS</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>*At the cinema; at the theatre; at the party; at university</p>
+    <p>*By car/bike/bus/train/boat/plane/land/sea/air</p>
+    <p>*On the radio; on TV; on the phone</p>
+    <p>*In pen/pencil/ink</p>
+    <p>*In a suit/raincoat/shirt/skirt/hat etc</p>
+</div>
+<!-- - COMPARATIVES AND SUPERLATIVES -->
+<div class="w3-container" id="COMPARATIVES AND SUPERLATIVES" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- COMPARATIVES AND SUPERLATIVES</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>The comparative (e.g. taller, sharper, stronger, heavier, shorter etc.) is used to compare one person or thing with another person or  thing.</p>
+
+    <p>*John is taller than Peter.</p>
+    <p>*Alice is cleverer than Mary.</p>
+
+    </br><p>The superlative (e.g. tallest, sharpest, strongest, heaviest, shortest etc.) is used to compare somebody or</p>
+    <p>something with the whole group to which she/he/it belongs.</p>
+
+    </br><p>*John is the tallest boy in the class.</p>
+    <p>*Alice is the prettiest of the four girls.</p>
+    <p>*He is the best player in the team.</p>
+
+    </br><p>When a group has only two members, we prefer the comparative to the superlative.</p>
+    </br><p>*Incorrect: Take the shortest of the two routes.</p>
+    <p>*Correct: Take the shorter of the two routes.</p>
+    <p>*Incorrect: She is the prettiest of the two sisters.</p>
+    <p>*Correct: She is the prettier of the two sisters.</p>
+</div>
+<!-- - COMPARATIVES : A COMMON ERROR -->
+<div class="w3-container" id="COMPARATIVES : A COMMON ERROR" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- COMPARATIVES : A COMMON ERROR</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>In comparative sentences be careful to compare the same part of two things. That of, these of and those of are necessary words that are often omitted.</p>
+
+    </br><p>*Incorrect: His teaching was like Jesus Christ.</p>
+    <p>*Correct: His teaching was like that of Jesus Christ.</p>
+    <p>*Incorrect: The size of the shoe must be the same as this shoe.</p>
+    <p>*Correct: The size of the shoe must be the same as that of this shoe.</p>
+    <p>*Incorrect: My books are better than my friend.</p>
+    <p>*Correct: My books are better than those of my friend.</p>
+
+</div>
+
+
+   <!-- - CONJUNCTIONS -->
+   <div class="w3-container" id="CONJUNCTIONS" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- CONJUNCTIONS</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>One conjunction is enough to join two clauses. English does not require a second</p>
+    <p>conjunction.</p>
+
+    </br><p>*Incorrect: Though he is old but he is healthy.</p>
+    <p>*Correct: Though he is old he is healthy. OR He is old but he is healthy.</p>
+    <p>*Incorrect: As he was fat so he ran slowly.</p>
+    <p>*Correct: As he was fat he ran slowly. OR He was fat so he ran slowly.</p>
+   <p>*Incorrect: If you work hard then you will succeed.</p>
+    <p>*Correct: If you work hard you will succeed.</p>
+    <p>*Incorrect: Because he is clever therefore he gets good marks.</p>
+    <p>*Correct: Because he is clever he gets good marks.</p>
+  </div>  
+<!-- - CORRELATIVES -->
+<div class="w3-container" id="CORRELATIVES" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- CORRELATIVES</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>When the correlatives either…or, neither…nor, both…and, not only…but also are used, you must see that they are placed before words of the same part of speech.</p>
+
+    </br><p>*Incorrect: The car either dashed against a dog or a goat. (verb-noun)</p>
+    <p>*Correct: The car dashed against either a dog or a goat. (noun-noun)</p>
+    <p>*Incorrect: Neither he would eat nor allow us to eat. (noun-verb)</p>
+    <p>*Correct: He would neither eat nor allow us to eat. (verb-verb)</p>
+    <p>*Incorrect: Neither he smokes nor drinks. (noun-verb)</p>
+    <p>*Correct: He neither smokes nor drinks. (verb-verb)</p>
+      </div> 
+<!-- - DEAD AND DIED -->
+<div class="w3-container" id="DEAD AND DIED" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- DEAD AND DIED</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>Dead is an adjective. It is used to modify a noun.</p>
+
+    </br><p>*He is dead. (NOT He is died.)</p>
+    <p>*A dead man (NOT A died man)</p>
+
+    </br><p>Died is the past tense and the past participle of the verb die.</p>
+    
+    </br><p>*He has died. (NOT He has dead.)</p>
+    <p>*He died last year. (NOT He dead last year.)</p>
+        </div> 
+<!-- - DETERMINES -->
+<div class="w3-container" id="DETERMINES" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- DETERMINES</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    
+    <p>Articles (a/an, the), possessives (my, your, his, her, their, our etc.) and demonstratives (this, that, these and those) are called Group A determiners.</p>
+    <p>Note that we cannot put two Group A determiners together. We can say my cat, the cat or that cat, but not the my cat or my that cat.</p>
+    <p>In order to put together the meanings of a possessive and an article or a demonstrative, we use a structure with of.</p>
+
+    </br><p>*He is a friend of mine. (NOT He is a my friend.)</p>
+    <p>*These shoes of mine pinch me terribly. (NOT These my shoes pinch me terribly.)</p>
+    <p>*Those dirty fingers of yours have stained the walls. (NOT Those your dirty fingers have …)</p>
+      </div>
+<!-- - DO AND MAKE -->
+<div class="w3-container" id="DO AND MAKE" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- DO AND MAKE</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>Do is sometimes confused with make. Make is used to talk about building or creating.</p>
+
+    </br><p>*Let’s make a cake.</p>
+    <p>*I once made a toy train.</p>
+
+    </br><p>Do is sometimes used instead of make. This is common when we want to sound casual about a creative activity.</p>
+
+    </br><p>*’What shall we eat?’ ‘Well, let me do an omelette.’ (More casual than ‘Let me make an omelette.’)</p>
+
+    </br><p>Common fixed expressions with do and make</p>
+
+   </br><p> Both do and make are used in some common fixed expressions.</p>
+    <p>Do good, harm, business, one’s best, a favor, sport, exercise, one’s hair, one’s teeth, one’s duty, 50mph etc.</p>
+    <p>Make a journey, an offer, arrangements, a suggestion, a decision, an attempt, an effort, an excuse, an exception, a mistake, a noise, a phone call, money, a profit, a fortune, love, peace, war, a bed, a fire, progress etc.</p>
+     </div>
+<!-- - DOUBLE NEGATIVES -->
+<div class="w3-container" id="DOUBLE NEGATIVES" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- DOUBLE NEGATIVES</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>Never use a negative verb and a negative qualifier (e.g. nothing, hardly, scarcely, nobody etc.) together.</p>
+
+    </br><p>*Incorrect: I haven’t nothing to prove.</p>
+    <p>*Correct: I have nothing to prove.</p>
+    <p>*Incorrect: Alice can’t hardly wait until her birthday.</p>
+    <p>*Correct: Alice can hardly wait until her birthday.</p>
+    <p>*Incorrect: There wasn’t nobody at the door.</p>
+    <p>*Correct: There was nobody at the door.</p>
+   </div>  
+<!-- - DURING AND FOR -->
+<div class="w3-container" id="DURING AND FOR" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- DURING AND FOR</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>During is used to say when something happens. For is used to say how long it lasts.</p>
+
+    </br><p>*Incorrect: I was in France for the summer.</p>
+    <p>*Correct: I was in France during the summer.</p>
+    <p>*Incorrect: I was in France during two months.</p>
+    <p>*Correct: I was in France for two months.</p>
+    </div>    
+<!-- - EACH AND EVERY -->
+<div class="w3-container" id="EACH AND EVERY" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- EACH AND EVERY</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Use each and every together only if you want to convey very strong emphasis.</p>
+
+    </br><p>*Incorrect: Each and every person wore a hat.</p>
+    <p>*Correct: Each person wore a hat.</p>
+    <p>*Correct: Everybody wore a hat.</p>
+      </div> 
+<!-- - EACH OTHER AND ONE OTHER -->
+<div class="w3-container" id="EACH OTHER AND ONE OTHER" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- EACH OTHER AND ONE OTHER</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <p>In modern English each other and one another are used in the same way. One another is preferred when we are making general statements.</p>
+
+    </br><p>*They have stopped talking to each other/one another.</p>
+
+    </br><p>Both expressions can be used in the possessive form.</p>
+
+    </br><p>*They would sit for hours listening to each other’s / one another’s tales.</p>
+    </div> 
+<!-- - EAST, EASTERN, NORTH, NORTHERN ETC. -->
+<div class="w3-container" id="EAST, EASTERN, NORTH, NORTHERN ETC." style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- EAST, EASTERN, NORTH, NORTHERN ETC.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+    <p>The words east, west etc., are used for clearly defined places. The words eastern,</p>
+    <p>western etc., are used when we are talking about vague areas.</p>
+    <p>Compare:</p>
+
+    </br><p>*The northern part of the country is hilly.</p>
+    <p>*The north side of the house has four windows.</p>
+
+    </br><p>Capital letters</p>
+    <p>Capital letters are used at the beginning of East, Eastern, North, Northern etc.,</p>
+    <p>when they come in official place names.</p>
+
+    </br><p>*South Africa</p>
+    <p>*the Middle East</p>
+    <p>*North Korea</p>
+
+    </br><p>In other cases these words begin with small letters.</p>
+
+    </br><p>*The sun rises in the east.</p>
+    <p>*He came from the west.</p>
+
+    </div>
+<!-- - ELDER AND ELDEST -->
+<div class="w3-container" id="ELDER AND ELDEST" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- ELDER AND ELDEST</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> <p>
+
+<p>*Incorrect: He is elder than me.</p>
+<p>*Correct: He is older than me.</p>
+<p>*Incorrect: He is the eldest man in the village.</p>
+<p>*Correct: He is the oldest man in the village.</p>
+
+</br><p>Elder and eldest can be used to talk about the order of birth of the members of a</p>
+<p>family. Note that they are only used before nouns. After a verb we use older or oldest.</p>
+
+</br><p>*My elder/older brother is a writer.</p>
+<p>*His eldest/oldest son is in the Army.</p>
+<p>*He is older than me. (NOT He is elder than me. Elder and eldest can’t be used in the predicative (after a verb) position.)</p>
+   </div>
+
+<!-- - END AND FINISH -->
+<div class="w3-container" id="END AND FINISH" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- END AND FINISH</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+<p>When followed by a direct object, finish means complete.</p>
+
+</br><p>*I have finished my job. (= I have completed my job.)</p>
+<p>*You never let me finish a sentence. (= You never let me complete a sentence.)</p>
+
+</br><p>Finish can be followed by an -ing form.</p>
+
+</br><p>*Have you finished writing that novel?</p>
+
+</br><p>When followed by a direct object, end means stop.</p>
+
+</br><p>*They have decided to end their affair. (NOT They have decided to finish their affair.)</p>
+
+</br><p>End cannot be followed by an -ing form.</p>
+
+</br><p>When they are not followed by objects, end and finish have similar meanings.</p>
+
+</br><p>*When does the concert finish/end?</p>
+   </div>
+<!-- - ENOUGH -->
+<div class="w3-container" id="ENOUGH" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- ENOUGH</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+<p>*Incorrect: He was enough foolish to trust her.</p>
+<p>*Correct: He was foolish enough to trust her.</p>
+<p>*Incorrect: If I were enough rich, I would buy a new car.</p>
+<p>*Correct: If I were rich enough, I would buy a new car.</p>
+
+</br><p>The adverb enough comes after the adjective which it qualifies.</p>
+   </div>
+<!-- - ESPECIALLY AND SPECIALY -->
+<div class="w3-container" id="ESPECIALLY AND SPECIALY" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- ESPECIALLY AND SPECIALY</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+<p>Both specially and especially can often be used with the same meaning.</p>
+
+</br><p>*It was not specially / especially cold.</p>
+
+</br><p>Especially can mean ‘above all’.</p>
+
+</br><p>*Sometimes I feel rather lonely, especially in the evenings.</p>
+
+</br><p>Specially is used to mean ‘for a particular purpose’.</p>
+
+</br><p>*I made this cake specially for you.</p>
+</div>
+<!-- - EXCEPT AND EXCEPT FOR -->
+<div class="w3-container" id="EXCEPT AND EXCEPT FOR" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- EXCEPT AND EXCEPT FOR</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+<p>*Incorrect: Except you, I like everyone.</p>
+<p>*Correct: Except for you, I like everyone.</p>
+<p>*Incorrect: Except this mistake, you did very well.</p>
+<p>*Correct: Except for this mistake, you did very well.</p>
+
+</br><p>Except can be used without for after words like all, every, no, <p>everything, anybody, nowhere, whole etc. In other cases we usually use <p>except for.</p>
+
+</br><p>*He cleaned all the rooms except the bedroom. OR He cleaned all the rooms except for the bedroom. (Except can be used without for after all.)</p>
+<p>*Nobody was invited except Peter and Alice. OR Nobody was invited except for Peter and Alice.</p>
+<p>*I like everyone except / except for you.</p>
+<p>*They were all tired except / except for John.</p>
+<p>*That was a good essay, except for a few spelling mistakes. (NOT That was a good essay, except a few spelling mistakes.)</p>
+
+</br><p>Before prepositions and conjunctions we use except.</p>
+</div>
+<!-- - EXCEPT AND HOPE -->
+<div class="w3-container" id="EXCEPT AND EXCEPT FOR" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- EXCEPT AND HOPE</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+<p>*Incorrect: She is hoping a raise.</p>
+<p>*Correct: She is expecting a raise.</p>
+
+</br><p>When we expect something we think that it will in fact happen. <p>When we hope for something to happen, we would like it to happen, <p>but we don’t know whether it will.</p>
+
+</br><p>*She is expecting a baby. (= She is pregnant now.)</p>
+<p>*She is hoping that it will be a girl. (She doesn’t know whether it will be a boy or a girl, but she will be happier if it is a girl.)</p>
+
+</br><p>We can expect good or bad things to happen, but we only hope for good things.</p>
+<div>
+<!-- - EXPRESSIONS WITHOUT PREPOSITIONS -->
+<div class="w3-container" id="EXPRESSIONS WITHOUT PREPOSITIONS" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- EXPRESSIONS WITHOUT PREPOSITIONS</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+<p>The verbs discuss, enter, marry, lack, resemble and approach are normally followed by objects without prepositions.</p>
+
+</br><p>*Incorrect: She married with an old man.</p>
+<p>*Correct: She married an old man.</p>
+<p>*Incorrect: We must discuss about the plans.</p>
+<p>*Correct: We must discuss the plans.</p>
+<p>*Incorrect: The baby resembles to its dad.</p>
+<p>*Correct: The baby resembles its dad.</p>
+<div>
+<!-- - FAR AND A LONG WAY -->
+<div class="w3-container" id="FAR AND A LONG WAY" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- FAR AND A LONG WAY</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+</br><p>We use far in questions and negative clauses.</p>
+
+</br><p>*Did you walk far?</p>
+<p>*The railway station is not far from here.</p>
+
+</br><p>We use a long way in affirmative clauses.</p>
+
+</br><p>*We walked a long way. (NOT We walked far.)</p>
+<p>*The post office is a long way from here.
+</p>
+</br><p>Far is common in affirmative clauses with adverbs like too, so, enough and as.
+</p>
+</br><p>*You have walked a bit too far.</p>
+<div>
+<!-- - GERUND -->
+<div class="w3-container" id="GERUND" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- GERUND</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+<p>*Incorrect: I am thinking to write a novel.</p>
+<p>*Correct: I am thinking of writing a novel.</p>
+<p>*Incorrect: We were prevented from enter the room.</p>
+<p>*Correct: We were prevented from entering the room.</p>
+
+</br><p>A preposition is followed by a gerund (-ing forms) and not an infinitive.</p>
+
+</br><p>*Incorrect: They insisted on me resigning the post.</p>
+<p>*Correct: They insisted on my resigning the post.</p>
+<p>*Incorrect: They objected to John playing for the other team.</p>
+<p>*Correct: They objected to John’s playing for the other team.</p>
+
+</br><p>A noun or a pronoun used before a gerund should be in the possessive case. Note that the possessive case should not be used with a gerund</p> <p>when the gerund is in the passive or when the noun or pronoun denotes a lifeless thing.</p>
+
+</br><p>*Incorrect: There is no danger of the roof’s crashing.</p>
+<p>*Correct: There is no danger of the roof crashing.</p>
+<div>
+<!-- - HISTORIC PRESENT -->
+<div class="w3-container" id="HISTORIC PRESENT" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>- HISTORIC PRESENT</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round"> 
+
+<p>When writing about a past event, we can use the present tense to make it appear as if the event is actually happening. Even if a person is dead, he or she can still be spoken of in the present tense. This is known as using the historic present. The following sentences are written using the historic present.</p>
+
+</br><p>*Winston Churchill is one of England’s greatest statesmen.</p>
+<p>*Captain Cook is responsible for white settlement in Australia.</p>
+<div>
+
+  </div>
+  
+    
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">Check Day Member</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
